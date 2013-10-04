@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doc Example</title>
+	<meta charset='utf-8'>
+	<script src="js/doc.js"></script>
+</head>
+<body>
+	<div class='container'>
+		<div class='row'>
+			<div class='col-md-12'>
+				<h1>Doc Example</h1>
+				this page is currently under construction and we will have more for you soon
+				<script>
+					doc.attachEvent(window, 'onclick', function(){
+						console.log('You Use IE Click')
+					});
+					doc.addEventListener(window, 'click', function(){
+						console.log('You Not Use IE Click')
+					});
+					var link=doc.createStyleSheet('link.css');
+				</script>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
